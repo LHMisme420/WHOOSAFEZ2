@@ -356,3 +356,63 @@ if __name__ == "__main__":
     
     print("\n=== FULL OSELP AUDIT TRAIL ===")
     print(wrapper.export_audit())
+# 🧠 Whoosafez + xAI API · Ethical Wrapper Prototype (v2.1 & v2.2)
+
+**Author:** Leroy H. Mason  
+**License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)  
+**Repository:** [LHMisme-signal-codex](https://github.com/LHMisme420/LHMisme-signal-codex)
+
+---
+
+## 🌐 Overview
+
+**Whoosafez** wraps the **xAI Grok API** in a cryptographic ethics layer.
+
+This framework introduces a *universal ethical gateway* that pre-scans prompts for injection (“venom”) and post-filters outputs for bias or harm — all while maintaining a transparent, hash-sealed **audit trail** under a ShareAlike license.
+
+### 🔒 Key Enhancements
+| Stage | Function | Description |
+|-------|-----------|-------------|
+| **Pre-Query Guard** | Venom scan + oath/realm validation | Stops malicious prompts before any API call |
+| **Post-Response Rupture** | OWASP-style harm filter | Flags violence, hate, illegal, or biased output |
+| **Audit Export** | Cryptographic “decrees” (SHA-256) | Transparent log of every decision |
+| **Salted Fallbacks** | Returns ethical refusals | Prevents wasted API usage on violations |
+
+---
+
+## ⚙️ Setup & Dependencies
+
+**Requirements**
+```bash
+pip install requests
+export XAI_API_KEY="sk-your-api-key"
+python whoosafez_xai_wrapper.py
+python whoosafez_xai_vision_wrapper.py
+image_url="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"
+🔥 Whoosafez xAI Vision Wrapper Demo
+[DECREE] VENOM_CLEAN → {...}
+[DECREE] VISION_API_CALL → {...}
+[DECREE] ETHICAL_VISION_SUCCESS → {...}
+{
+  "time": "2025-10-31T17:33:00Z",
+  "type": "ETHICAL_QUERY_SUCCESS",
+  "details": { "prompt": "Explain ethical AI principles", "salt": "a92c4b4e21" },
+  "seal": "f83b5ae2d..."
+}
+
+---
+
+### ⚖️ **LICENSE**
+```text
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+
+Under the following terms:
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+
+Full license text:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
